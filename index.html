@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/simple.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="http://localhost:5150/socket.io/socket.io.js"></script> 
+  <title>My little chat app</title>
+</head>
+<body>
+    <div class='container' id="chat" style="display:none">
+      <div class="chat-title">Chat</div>
+      <div class="chat-container">
+      <div id="content" class="chat-dump"></div>
+      </div>
+      <div class="chat-form">
+        <form class="fform">
+          <label class="chat-label">
+          <input type="text" placeholder="Scrivi un messaggio..." class="chat-input">
+          </label>
+          <input type="submit" value="&crarr;" class="chat-submit">
+        </form>
+      </div>
+    </div> 
+    <div class="container" id="username" >
+        <div class="centered">
+          <input type="text" style="width: 80%;font-size: 50px;" placeholder="Per accedere alla chat inserisci il tuo nome" id="Username">
+          <button type="button" style="font-size: 50px;" onclick="getUsername();">Conferma</button>
+        </div>
+      </div>
+    </div>
+  <script src="app.js"></script>
+</body>
+</html>
