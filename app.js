@@ -39,6 +39,11 @@ const render = ({message, name}) => {
    author.textContent = name+": "
    author.style.color = stringToColour(name);
    div.appendChild(author)
+   const date = document.createElement('div')
+   date.classList.add('date')
+   var today = new Date();
+   date.textContent = today.getHours() +":" + today.getMinutes()
+   div.appendChild(date)
    const mm = document.createElement('div')
    mm.classList.add('chat-message');
    mm.textContent = message;

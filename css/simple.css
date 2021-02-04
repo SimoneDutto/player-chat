@@ -3,6 +3,7 @@ html,body,.container {
     width: 100%;
     overflow: hidden;
     margin:0px;
+    font-family: Helvetica;
 }
 
 .chat-title{
@@ -28,8 +29,10 @@ html,body,.container {
 }
 .chat-dump{
     width: 100%;
+    box-sizing: border-box;
     height: 100%;
     overflow: scroll;
+    padding: 10px;
 }
 .chat-form {
     box-sizing: border-box;
@@ -65,22 +68,31 @@ html,body,.container {
 }
 
 .message {
+    display: flex;
     clear: both;
-    font-size: 5vw;
+    width: 95%;
+    font-size: 15px;
+    padding: 7px;
     background-color: #fff;
-	padding: 1.125em 1.5em;
-	font-size: 1.25em;
-	border-radius: 1rem;
-    box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    box-shadow:	3px 3px 3px rgba(0, 0, 0, .3), 3px 3px 3px rgba(0, 0, 0, .2);
+    margin: 5px;
 }
 
 .author {
+    padding-left: 25px;
     font-weight: bold;
     float: left;
 }
+.date {
+    padding-left: 15px;
+    font-weight: italic;
+    color: rgb(211,211,211);
+} 
+
 .chat-message {
+    clear: both;
     margin-left: 5%;
-    float: left;
 }
 .centered{
     position: relative;
