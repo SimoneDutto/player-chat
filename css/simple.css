@@ -3,7 +3,8 @@ html,body,.container {
     width: 100%;
     overflow: hidden;
     margin:0px;
-    font-family: Helvetica;
+    font-family: verdana;
+    background: linear-gradient(135deg, #F4F2F3, #BFC6D0);
 }
 
 .chat-title{
@@ -18,6 +19,7 @@ html,body,.container {
     padding-top: 30px;
     padding-bottom: 40px;
     border-bottom: 1px solid black;
+    color: #3a3b40;
 }
 .chat-container{
     box-sizing: border-box;
@@ -58,6 +60,8 @@ html,body,.container {
     font-size: 15px;
     width: 100%;
     padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 10px;
 }
 .chat-submit{
     width:3%;
@@ -70,29 +74,35 @@ html,body,.container {
 .message {
     display: flex;
     clear: both;
+    margin auto:
     width: 95%;
+    margin-top: 7px;
     font-size: 15px;
     padding: 7px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow:	3px 3px 3px rgba(0, 0, 0, .3), 3px 3px 3px rgba(0, 0, 0, .2);
-    margin: 5px;
+    border: 1px solid transparent;
+    box-shadow:	2px 2px 2px rgba(0, 0, 0, .3), 2px 2px 2px rgba(0, 0, 0, .2);
 }
 
 .author {
-    padding-left: 25px;
+    width: 130px;
+    padding-left: 15px;
     font-weight: bold;
     float: left;
 }
 .date {
+    width: 30px;
+    float: left;
     padding-left: 15px;
     font-weight: italic;
     color: rgb(211,211,211);
 } 
 
 .chat-message {
-    clear: both;
-    margin-left: 5%;
+    width: 100%;
+    margin-left: 40px;
+    overflow-wrap: break-word;
 }
 .centered{
     position: relative;

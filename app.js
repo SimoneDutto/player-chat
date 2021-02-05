@@ -36,13 +36,13 @@ const render = ({message, name}) => {
    div.classList.add('message')
    const author = document.createElement('div')
    author.classList.add('author')
-   author.textContent = name+": "
+   author.textContent = name
    author.style.color = stringToColour(name);
    div.appendChild(author)
    const date = document.createElement('div')
    date.classList.add('date')
    var today = new Date();
-   date.textContent = today.getHours() +":" + today.getMinutes()
+   date.textContent = today.getHours() +":" + (today.getMinutes()<10?'0':'') + today.getMinutes();  
    div.appendChild(date)
    const mm = document.createElement('div')
    mm.classList.add('chat-message');
@@ -65,6 +65,7 @@ function getUsername(){
    else{
       document.getElementById("username").style.display = "none";
       document.getElementById("chat").style.display = "block";
+      document.getElementById("chatinput").focus();
    }
 }
 
